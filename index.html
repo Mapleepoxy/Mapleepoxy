@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Maple Epoxy and Polishing System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script>let slideIndex = 0;
+    let autoSlide;
+    
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slide");
+      if (n === undefined) {
+        slideIndex++;
+      } else {
+        slideIndex = n;
+      }
+    
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      if (slideIndex < 1) { slideIndex = slides.length }
+    
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+    
+      slides[slideIndex - 1].style.display = "block";
+    }
+    
+    // Arrow controls
+    function plusSlides(n) {
+      clearTimeout(autoSlide);
+      showSlides(slideIndex + n);
+      autoSlide = setTimeout(() => showSlides(), 4000);
+    }
+    
+    // Start automatic slideshow
+    autoSlide = setTimeout(() => showSlides(), 4000);
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.getElementById("menuToggle");
+    const navList = document.querySelector("#hero nav ul");
+
+    menuButton.addEventListener("click", function () {
+      navList.classList.toggle("mobile-visible");
+    });
+    
+  });
+    
+    </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <div class="top-header">
+    <div class="top-header-container">
+      <button id="menuToggle" class="mobile-menu-button">&#9776;</button>
+      <a href="tel:+1 825-366-0003">☎ 825-366-0003</a> 
+      <span class="business-name">Maple Epoxy & Polishing</span>
+      <a href="mailto:info@mapleepoxy.com">✉️ info@mapleepoxy.com</a>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="mobile-side-menu">
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="hero">
+    <header>
+      <div class="container header-flex">
+        <img src="logo.jpg" alt="Maple Epoxy Logo" class="logo" />
+        <h1 class="site-title">Maple Epoxy and Polishing System</h1>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      
+    </header>
+  
+    <div class="container hero-content">
+      <h2>Calgary’s No.1 Epoxy Flooring Experts</h2>
+      <p>Specializing in Metallic, Flake, Quartz, and Commercial Epoxy Flooring</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+  </section>
+  
+  
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service" style="background-image: url('metallic.jpg');">
+          <h3>Metallic Epoxy Flooring</h3>
+          <p>Transform ordinary concrete into a work of art with rich, flowing metallic tones for a sophisticated and unique finish.</p>
+        </div>
+        <div class="service" style="background-image: url('counter-top.jpg');">
+          <h3>Counter Tops Epoxy</h3>
+          <p>Transform your kitchen or bathroom surfaces with our premium epoxy countertop services. We specialize in creating stunning, durable, and seamless finishes that mimic the look of natural stone, marble, or granite—at a fraction of the cost.</p>
+        </div>
+        <div class="service" style="background-image: url('clean-flooring.jpeg');">
+          <h3>Garage Flake Epoxy Flooring</h3>
+          <p>Effortless elegance with seamless durability—engineered for both beauty and resilience.
+          </p>
+        </div>
+        <div class="service" style="background-image: url('commercial.jpg');">
+          <h3>Sleek Single-Tone Epoxy Finish</h3>
+          <p>Minimalist elegance with a flawless solid color surface, offering both aesthetic appeal and long-lasting strength.
+          </p>
+        </div>
+        <div class="service" style="background-image: url('unsealed-surface.jpg');">
+          <h3>Asphalt & Concrete Sealing</h3>
+          <p>Protects driveways from moisture penetration, UV damage, and surface wear with a durable sealing coat designed for long-term preservation.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <section id="gallery" class="slideshow-container">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+    </div>
+  
+    <div class="slide fade">
+      <img src="gallery4.jpg" alt="Gallery Image 1">
+    </div>
+    <div class="slide fade">
+      <img src="gallery2.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="slide fade">
+      <img src="gallery3.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="slide fade">
+      <img src="gallery1.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="slide fade">
+      <img src="gallery5.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="slide fade">
+      <img src="gallery6.jpg" alt="Gallery Image 3">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+  </section>
+  
+  
+  
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Maple Epoxy is a family-owned business operating, dedicated to providing high-quality epoxy flooring solutions in Calgary and surrounding areas. Our team of professionals ensures customer satisfaction through honesty, transparency, and a commitment to excellence.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="mailto:info@alphaepoxy.ca" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Inquiry</button>
+      </form>
+      <p>Phone: +1 825-366-0003</p>
+      <p>Email: info@mapleepoxy.ca</p>
+      <p>46 Saddlestone Dr. NE Calgary AB T3J0W4</p>
+      <p>Open 7 Days a week</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Maple Epoxy and Polishing Services. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Select necessary elements
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const sideMenu = document.querySelector('.mobile-side-menu');
+    const body = document.querySelector('body');
+    const menuItems = document.querySelectorAll('.mobile-side-menu nav ul li a');
+  
+    // Function to open/close the menu
+    const toggleMenu = () => {
+      sideMenu.classList.toggle('open'); // Toggle the "open" class on the menu
+      menuButton.classList.toggle('open'); // Keep the hamburger icon visible
+    };
+  
+    // Add event listener to the hamburger button to toggle menu
+    menuButton.addEventListener('click', toggleMenu);
+  
+    // Close the menu when clicking outside of it
+    body.addEventListener('click', (e) => {
+      if (!sideMenu.contains(e.target) && !menuButton.contains(e.target)) {
+        sideMenu.classList.remove('open'); // Close the menu
+        menuButton.classList.remove('open'); // Keep the hamburger icon visible
+      }
+    });
+  
+    // Close the menu when a menu item is clicked
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        sideMenu.classList.remove('open');
+        menuButton.classList.remove('open');
+      });
+    });
+  </script>  
+</body>
+</html>
